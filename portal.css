@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    & h1 {
+        color: white;
+        text-align: center;
+        font-size: 3rem;
+    }
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0a003e;
+    color: #ffffff;
+    margin-top: auto;
+}
