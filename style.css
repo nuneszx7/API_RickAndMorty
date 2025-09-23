@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Get Schwifty', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    background-color: #00b0c8;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    margin: 0;
+}
+
+
+main .caixa-de-pesquisa input {
+    text-align: center;
+    border-radius: 2px;
+    width: 200px;
+    height: 30px;
+}
+
+
+main .caixa-de-pesquisa button {    
+    border-radius: 4px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(214, 245, 255);
+}
+
+
+body .buscarImagens button:hover {
+    background-color: #52b3b3;
+}
+
+
+#personagens-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    flex-grow: 1;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+
+.personagem-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+}
+
+
+.personagem-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.personagem-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.card-content {
+    padding: 15px;
+}
+
+
+.card-content h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.25rem;
+    color: #007bb6;
+}
+
+
+.card-content p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+
+.paginas {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+
+.paginas button {
+    background-color: #007bb6;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+
+.paginas button:hover:not([disabled]) {
+    background-color: #005f8a;
+}
+
+
+.paginas button:disabled {
+    background-color: #b0c4de;
+    cursor: not-allowed;
+}
+
+
+.loading,
+.error {
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: #bbb;
+    margin-top: auto;
+}

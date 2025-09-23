@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src=".\rickApi.js" type="module" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Rick & Morty API</title>
+</head>
+
+
+
+<body>
+
+
+
+    <header>
+
+        <menu>
+            <li class="nome-site">Ricky & Morty API</li>
+
+            <li class="home">Home
+                <a href="index.html"></a>
+            </li>
+
+            <li class="portal">Portal
+                <a href="portal.html"></a>
+            </li>
+
+        </menu>
+
+    </header>
+    
+
+
+
+    <main id="personagens-container">
+        <p class="loading">Carregando personagens...</p>
+        <form class="caixa-de-pesquisa">
+            <input type="text" placeholder="Pesquisar personagem" id="Pesquisa de personagem">
+            <button type="submit">Buscar
+                <!-- <img src="./img/16492.png" alt="icone de pesquisa"> -->
+            </button>
+        </form>
+    </main>
+
+    <div class="paginas">
+        <button id="prev-btn" disabled>Anterior</button>
+        <button id="next-btn" disabled>Próxima</button>
+    </div>
+
+    <footer>
+        João Pedro Teodoro Nunes Correia &#169 2025
+    </footer>
+
+</body>
+
+</html>
