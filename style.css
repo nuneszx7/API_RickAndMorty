@@ -185,6 +185,7 @@ body .buscarImagens button:hover {
 
 
 footer {
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     padding: 15px;
     background-color: #333;
