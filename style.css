@@ -23,7 +23,7 @@ body {
 
 
 header {
-    background-color: #00b0c8;
+    background-color: #046470;
     color: white;
     text-align: center;
     padding: 1rem 2rem;
@@ -74,11 +74,21 @@ main {
     align-items: center;
 }
 
+main .pesquise-o-personagem {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 65px
+
+}
+
 main .caixa-de-pesquisa input {
     text-align: center;
     border-radius: 2px;
     width: 200px;
     height: 30px;
+    margin-top: 10px;
 }
 
 
@@ -103,6 +113,7 @@ section .galeria {
     justify-items: center;
     max-width: 1200px;
     margin: 20px auto;
+    margin-top: 1000px;
 }
 
 .principais-personagens {
@@ -110,6 +121,7 @@ section .galeria {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+    margin-top: 120px;
 }
 
 #personagens-container {
@@ -176,7 +188,9 @@ section .galeria {
 
 
 .paginas button {
-    background-color: #007bb6;
+    width: 5%;
+    height: 5%;
+    background-color: #00b6b0;
     color: white;
     border: none;
     padding: 12px 25px;
@@ -188,12 +202,12 @@ section .galeria {
 
 
 .paginas button:hover:not([disabled]) {
-    background-color: #005f8a;
+    background-color: #00888a;
 }
 
 
 .paginas button:disabled {
-    background-color: #b0c4de;
+    background-color: #658c91;
     cursor: not-allowed;
 }
 
