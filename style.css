@@ -12,8 +12,8 @@ ul,ol,li{
 
 body {
     font-family: 'Get Schwifty', sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
+    background: linear-gradient(358deg,rgba(81, 219, 191, 1) 30%, rgba(25, 97, 90, 1) 70%);
+    color: #ffffff;
     margin: 0;
     padding: 0;
     display: flex;
@@ -23,7 +23,7 @@ body {
 
 
 header {
-    background-color: #046470;
+    background-color: #19615A;
     color: white;
     text-align: center;
     padding: 1rem 2rem;
@@ -202,7 +202,7 @@ section .galeria {
 
 
 .paginas button:hover:not([disabled]) {
-    background-color: #00888a;
+    background-color: #00a6a9;
 }
 
 
