@@ -67,6 +67,12 @@ h1 {
     margin: 0;
 }
 
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 main .caixa-de-pesquisa input {
     text-align: center;
@@ -88,6 +94,23 @@ body .buscarImagens button:hover {
     background-color: #52b3b3;
 }
 
+section .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    flex-grow: 1;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.principais-personagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
 #personagens-container {
     display: grid;
