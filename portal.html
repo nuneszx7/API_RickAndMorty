@@ -4,40 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src=".\rickApi.js" type="module" defer></script>
+    <script src=".\portalRick.js" type="module" defer></script>
     <link rel="stylesheet" href="portal.css">
     <title>Portal</title>
 </head>
 
 <body>
 
+    <!-- Camadas para o fundo de estrelas -->
+    <div id="stars1"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
     <h1>Clique no portal para gerar um personagem aleatório</h1>
 
     <div class="portal">
-        <button type="submit"> 
-            <!-- Linha abaixo "FUNCIONANDO", porém eu preciso 'setar' para que o link de referência ocupe a imagem do portal por completo e redirecionar para algum lugar onde será feito a escolha 
-             do personagem aleatório que irá aparecer na tela. (o index.html no href foi apenas um teste, será colocado outro link) -->
-            <a href="index.html"><img src="./img/portal-rick-and-morty.gif" alt="Portal"></a> 
-        </button>
+        <img id="portal-img" src="./img/portal-rick-and-morty.gif" alt="Portal para gerar personagem aleatório">
     </div>
-    <!-- <img src="./img/portal-rick-and-morty.gif" alt="Portal"> -->
 
-    <div class="main"></div>
+    <!-- Container onde o card do personagem aparecerá -->
+    <div id="personagem-container" class="personagem-container"></div>
 
-    <!--
-
-function randomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min
-}
-
-const STAR_COUNT = 400
-let result = ""
-for(let i = 0; i < STAR_COUNT; i++){
-    result += `${randomNumber(-50, 50)}vw ${randomNumber(-50, 50)}vh ${randomNumber(0, 1)}px ${randomNumber(0, 1)}px #fff,`
-}
-console.log(result.substring(0, result.length - 1))
-
--->
+    <div id="botoes-acao" class="botoes-acao hidden">
+        <!-- Botão para voltar ao estado inicial -->
+        <button id="voltar-btn">Voltar ao Portal</button>
+        <a href="index.html" id="voltar-pesquisa-btn">Voltar para Pesquisa</a>
+    </div>
 
     <footer>
         João Pedro Teodoro Nunes Correia &#169 2025

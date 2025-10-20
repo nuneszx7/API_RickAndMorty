@@ -41,7 +41,7 @@
             <p class="pesquise-o-personagem">Carregando personagens...</p>
             <form class="caixa-de-pesquisa">
     
-                <input type="text" placeholder="Pesquisar personagem" id="Pesquisa de personagem">
+                <input type="text" placeholder="Pesquisar personagem" id="pesquisa-personagem">
                 <button type="submit">Buscar
                     <!-- <img src="./img/16492.png" alt="icone de pesquisa"> -->
                 </button>
@@ -52,26 +52,28 @@
 
 
         <section class="galeria">
-            <div class="principais-personagens">
-                <h2>Principais personagens e temporadas</h2>
-
-                <div class="personagens-container">
-                    <!-- <img src="./img/rick.png" alt="Rick Sanchez">
-                    <img src="./img/morty.png" alt="Morty Smith">
-                    <img src="./img/summer.png" alt="Summer Smith">
-                    <img src="./img/jerry.png" alt="Jerry Smith">
-                    <img src="./img/beth.png" alt="Beth Smith"> -->
-                </div>
-
+            <div id="search-results-container" class="grid-container" style="display: none;">
+                <button id="limpar-busca-btn" class="limpar-busca-btn" style="display: none;">Limpar Busca</button>
+                <!-- Resultados da busca serão inseridos aqui -->
             </div>
-
+            <section class="principais-personagens">
+                <h2>Principais Personagens</h2>
+                <div id="personagens-principais-container" class="grid-container">
+                    <!-- Cards de personagens serão inseridos aqui -->
+                </div>
+            </section>
         </section>
 
     </main>
 
-    <div class="paginas">
-        <button id="prev-btn" disabled>Anterior</button>
-        <button id="next-btn" disabled>Próxima</button>
+    <!-- Modal para Detalhes do Personagem -->
+    <div id="modal-container" class="modal-container">
+        <div class="modal-content">
+            <button class="modal-close-btn" id="modal-close-btn">&times;</button>
+            <div id="modal-body">
+                <!-- Conteúdo do personagem será injetado aqui pelo JavaScript -->
+            </div>
+        </div>
     </div>
 
     <footer>
